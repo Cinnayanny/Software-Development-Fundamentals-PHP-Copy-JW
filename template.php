@@ -8,7 +8,7 @@ function footer():string
     return $footer;
 }
 
-function sanitiseData($unsanitisedData)
+function sanitiseData($unsanitisedData):string
 {
     $unsanitisedData = trim($unsanitisedData);
     $unsanitisedData = stripslashes($unsanitisedData);
