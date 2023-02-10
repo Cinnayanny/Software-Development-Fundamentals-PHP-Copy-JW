@@ -25,16 +25,17 @@
         <button type="submit" name="formSubmit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-
+<p>
 <?php
 if (isset($_POST['formSubmit'])){
     $userEmail = sanitiseData($_POST['contactEmail']);
     $userMessage = sanitiseData($_POST['contactMessage']);
     echo $userEmail;
+    echo "<p>";
     echo $userMessage;
 }
 ?>
-
+</p>
 <?php echo footer() ?>
 </body>
 <script src="js/bootstrap.bundle.min.js" ></script>
