@@ -1,42 +1,41 @@
 <!doctype html>
-<?php include "template.php"?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Us</title>
+    <title>PHP Template</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <h1>Contact Us</h1>
 
 <div class="container-fluid">
-    <h1 class="text-primary">Please Send us a Message</h1>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <form action="contact.php" method="post">
         <div class="mb-3">
-            <label for="contactEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="contactEmail" name="contactEmail"
-                   placeholder="name@example.com">
+            <label for="inputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll share your email with everyone else.</div>
         </div>
         <div class="mb-3">
-            <label for="contactMessage" class="form-label">Message</label>
-            <textarea class="form-control" id="contactMessage" name="contactMessage" rows="3"></textarea>
+            <label for="inputMessage" class="form-label">Message</label>
+            <input type="text" class="form-control" id="inputMessage" name="inputMessage">
         </div>
-        <button type="submit" name="formSubmit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-<p>
+
 <?php
-if (isset($_POST['formSubmit'])){
-    $userEmail = sanitiseData($_POST['contactEmail']);
-    $userMessage = sanitiseData($_POST['contactMessage']);
-    echo $userEmail;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $emailAddress = $_POST['inputEmail'];
+    $messageSubmitted = $_POST['inputMessage'];
+
+    echo $emailAddress;
     echo "<p>";
-    echo $userMessage;
+    echo $messageSubmitted;
+
 }
 ?>
-</p>
-<?php echo footer() ?>
+
 </body>
 <script src="js/bootstrap.bundle.min.js" ></script>
 </html>
