@@ -37,9 +37,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Enter a message to submit.";
     }
     if ($formError == false) {
-        $emailAddress = sanitisedData($_POST['inputEmail']);
-        $messageSubmitted = sanitisedData($_POST['inputMessage']);
-        # Oddly, you can't put sanitiseData on these because it sanitises 100% of the data. Nothing gets submitted.
+        $emailAddress = sanitiseData($_POST['inputEmail']);
+        $messageSubmitted = sanitiseData($_POST['inputMessage']);
 
         echo "Thanks, your email has been posted to Twitter.com along with your bad take.";
         $csvFile = fopen ("contact.csv", "a");
