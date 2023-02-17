@@ -1,0 +1,18 @@
+.navbar {
+    overflow: hidden;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: lightblue;
+}

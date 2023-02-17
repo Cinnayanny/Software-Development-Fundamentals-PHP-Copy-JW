@@ -1,3 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <div class="navbar">
+        <a href="index.php">Home</a>
+        <a href="contact.php">Contacts</a>
+        <!--<form><p><label for="search"></label>
+                <input type="text" id="search" name="search">
+                <button onclick="authentication(this.form)">Search</button></p>
+        </form> -->
+    </div>
+</head>
+
+
 <?php
 
 function footer():string
