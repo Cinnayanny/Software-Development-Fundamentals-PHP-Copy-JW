@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($formError == false) {
         $emailAddress = $_POST['inputEmail'];
         $messageSubmitted = $_POST['inputMessage'];
-        # Oddly, you can't put sanitiseData on these because they'll not show up
+        # Oddly, you can't put sanitiseData on these because the message won't show up
 
         echo $emailAddress;
         echo "<p>";
