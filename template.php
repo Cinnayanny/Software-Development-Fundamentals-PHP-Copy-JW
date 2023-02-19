@@ -7,6 +7,7 @@
     <link href="css/navbar.css" rel="stylesheet">
 
     <div class="navbar">
+        <img src="Images/Prototype.png" width="153.5" height="107">
         <a href="index.php">Home</a>
         <a href="contact.php">Contacts</a>
         <!--<form><p><label for="search"></label>
