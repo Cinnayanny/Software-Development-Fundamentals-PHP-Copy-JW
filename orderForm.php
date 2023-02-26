@@ -59,7 +59,25 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Customer Details
+    $cusNameFirst = sanitiseData($_POST['customerNameFirst']);
+    $cusNameSecond = sanitiseData($_POST['customerNameSecond']);
+    $cusAddress = sanitiseData($_POST['customerAddress']);
+    $cusEmail = sanitiseData($_POST['customerEmail']);
+    $cusPhone = sanitiseData($_POST['customerPhone']);
 
+// Product Quantities
+    $prodQuantity1 = sanitiseData($_POST['orderProduct1']);
+    $prodQuantity2 = sanitiseData($_POST['orderProduct2']);
+    $prodQuantity3 = sanitiseData($_POST['orderProduct3']);
+    $prodQuantity4 = sanitiseData($_POST['orderProduct4']);
+    $prodQuantity5 = sanitiseData($_POST['orderProduct5']);
+
+    $csvFile = fopen("orders.csv", "a");
+// Write the string to the end of the file.
+    fwrite($csvFile, $cusNameFirst . "," . $cusNameSecond . "," . $cusAddress . "," . $cusEmail . "," . $cusPhone . "," . $prodQuantity1 . "," . $prodQuantity2 . "," . $prodQuantity3 . "," . $prodQuantity4 . "," . $prodQuantity5 . "," . "\n");
+// Close the connection to the file.
+    fclose($csvFile);
 }
 ?>
 
