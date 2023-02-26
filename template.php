@@ -10,6 +10,8 @@
         <img src="Images/Prototype.png" width="153.5" height="107">
         <a href="index.php">Home</a>
         <a href="contact.php">Contacts</a>
+        <a href="orderForm.php">Order</a>
+        <a href="invoice.php">Invoice</a>
         <!--<form><p><label for="search"></label>
                 <input type="text" id="search" name="search">
                 <button onclick="authentication(this.form)">Search</button></p>
