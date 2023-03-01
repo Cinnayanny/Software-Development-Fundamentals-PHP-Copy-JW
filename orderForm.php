@@ -21,6 +21,7 @@
                     <label for="customerAddress" class="form-label">Address</label>
                     <input class="form-control" id="customerAddress" name="customerAddress"
                            placeholder="...">
+                    <p>Please do not use commas to separate information in this box.</p>
                     <label for="customerPhone" class="form-label">Phone Number</label>
                     <input class="form-control" id="customerPhone" name="customerPhone"
                            placeholder="...">
