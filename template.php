@@ -12,6 +12,7 @@
         <a href="contact.php">Contacts</a>
         <a href="orderForm.php">Order</a>
         <a href="invoice.php">Invoice</a>
+        <a href="invoiceHistory.php">Invoice History</a>
         <!--<form><p><label for="search"></label>
                 <input type="text" id="search" name="search">
                 <button onclick="authentication(this.form)">Search</button></p>
