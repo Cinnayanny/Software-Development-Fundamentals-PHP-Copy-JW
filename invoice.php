@@ -3,6 +3,10 @@
 <body>
 
 <?php
+
+$invoiceNumber = $_GET["invoiceNumber"];
+echo $invoiceNumber
+
 // Read the contents of the file
     $currentRow = 1;
     if (($handle = fopen("orders.csv", "r")) !== FALSE) {
