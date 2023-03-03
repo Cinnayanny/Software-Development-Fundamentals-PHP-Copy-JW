@@ -39,6 +39,7 @@
             $prod5SubTotal = $prod5Quantity * $prod5ItemCost;
             $invoiceTotal = $prod1SubTotal + $prod2SubTotal + $prod3SubTotal + $prod4SubTotal + $prod5SubTotal;
         }
+        fclose($handle);
     }
 ?>
 
