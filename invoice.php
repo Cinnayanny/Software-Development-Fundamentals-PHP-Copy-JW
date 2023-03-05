@@ -1,4 +1,6 @@
-<?php include "template.php" ?>
+<?php include "template.php"
+/** @var $productNames */
+/** @var $productPrices */?>
 <title>Invoice</title>
 <body>
 
@@ -87,32 +89,32 @@ echo $invoiceNumber;
     </div>
 
     <div class="row">
-        <div class="col-lg-3">Product 1</div>
-        <div class="col-lg-3">$<?= $prod1ItemCost ?></div>
+        <div class="col-lg-3"><?php echo $productNames["product1"]; ?></div>
+        <div class="col-lg-3">$<?= $productPrices["product1"] ?></div>
         <div class="col-lg-3"><?= $prod1Quantity ?></div>
         <div class="col-lg-3">$<?= $prod1SubTotal ?></div>
     </div>
     <div class="row">
-        <div class="col-lg-3">Product 2</div>
-        <div class="col-lg-3">$<?= $prod2ItemCost ?></div>
+        <div class="col-lg-3"><?php echo $productNames["product1"]; ?></div>
+        <div class="col-lg-3">$<?= $productPrices["product1"] ?></div>
         <div class="col-lg-3"><?= $prod2Quantity ?></div>
         <div class="col-lg-3">$<?= $prod2SubTotal ?></div>
     </div>
     <div class="row">
-        <div class="col-lg-3">Product 3</div>
-        <div class="col-lg-3">$<?= $prod3ItemCost ?></div>
+        <div class="col-lg-3"><?php echo $productNames["product1"]; ?></div>
+        <div class="col-lg-3">$<?= $productPrices["product1"] ?></div>
         <div class="col-lg-3"><?= $prod3Quantity ?></div>
         <div class="col-lg-3">$<?= $prod3SubTotal ?></div>
     </div>
     <div class="row">
-        <div class="col-lg-3">Product 4</div>
-        <div class="col-lg-3">$<?= $prod4ItemCost ?></div>
+        <div class="col-lg-3"><?php echo $productNames["product1"]; ?></div>
+        <div class="col-lg-3">$<?= $productPrices["product1"] ?></div>
         <div class="col-lg-3"><?= $prod4Quantity ?></div>
         <div class="col-lg-3">$<?= $prod4SubTotal ?></div>
     </div>
     <div class="row">
-        <div class="col-lg-3">Product 5</div>
-        <div class="col-lg-3">$<?= $prod5ItemCost ?></div>
+        <div class="col-lg-3"><?php echo $productNames["product1"]; ?></div>
+        <div class="col-lg-3">$<?= $productPrices["product1"] ?></div>
         <div class="col-lg-3"><?= $prod5Quantity ?></div>
         <div class="col-lg-3">$<?= $prod5SubTotal ?></div>
     </div>
