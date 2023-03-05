@@ -28,14 +28,6 @@ echo $invoiceNumber;
             $prod4Quantity = $data[8];
             $prod5Quantity = $data[9];
 
-
-            // Product Costs
-            $prod1ItemCost = 3.4;
-            $prod2ItemCost = 5.0;
-            $prod3ItemCost = 12.54;
-            $prod4ItemCost = 19.77;
-            $prod5ItemCost = 1.01;
-
             $prod1SubTotal = $prod1Quantity * $prod1ItemCost;
             $prod2SubTotal = $prod2Quantity * $prod2ItemCost;
             $prod3SubTotal = $prod3Quantity * $prod3ItemCost;

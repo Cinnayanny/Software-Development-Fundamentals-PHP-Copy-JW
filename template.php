@@ -23,7 +23,7 @@
 
 <?php
 
-$productNames = array("product1"=>"Darth Vader Helmet", "product2"=>"Grogu Plush", "product3"=>"ROTJ Jigsaw", "product4"=>"Aftermath", "product5"=>"Alphabet Squadron");
+$productNames = array("product1"=>"Catgirl Headphones", "product2"=>"ArlePlush", "product3"=>"Funny Jigsaw", "product4"=>"Pirated copy of Photoshop", "product5"=>"Good Opinions");
 $productPrices= array("product1"=>299.0, "product2"=>32.95, "product3"=>219.95, "product4"=>24.95, "product5"=>24.95);
 
 function footer():string
