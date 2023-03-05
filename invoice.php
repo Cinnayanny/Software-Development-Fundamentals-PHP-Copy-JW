@@ -5,7 +5,7 @@
 <?php
 
 $invoiceNumber = $_GET["invoiceNumber"];
-echo $invoiceNumber
+echo $invoiceNumber;
 
 // Read the contents of the file
     $currentRow = 1;
