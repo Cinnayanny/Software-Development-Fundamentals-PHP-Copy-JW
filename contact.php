@@ -34,9 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $messageSubmitted = sanitiseData($_POST['inputMessage']);
 
         echo "Thanks, your email has been posted to Twitter.com along with your bad take.";
-        $csvFile = fopen ("contact.csv", "a");
-        fwrite($csvFile, $emailAddress. ", " .$messageSubmitted. "\n");
-        fclose($csvFile);
+        $sqlStmt = $conn->prepare("INSERT INTO Contact (ContactEmail, Message) VALUES (:ContactEmail, :Message)");
+//        $csvFile = fopen ("contact.csv", "a");
+//        fwrite($csvFile, $emailAddress. ", " .$messageSubmitted. "\n");
+//        fclose($csvFile);
     }
 
 }

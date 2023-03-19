@@ -23,6 +23,9 @@
 
 <?php
 
+session_start();
+$conn = new SQLite3("db") or die("Unable to open database");
+
 $productNames = array("product1"=>"Catgirl Headphones", "product2"=>"ArlePlush", "product3"=>"Funny Jigsaw", "product4"=>"Pirated copy of Photoshop", "product5"=>"Good Opinions");
 $productPrices= array("product1"=>299.0, "product2"=>32.95, "product3"=>219.95, "product4"=>24.95, "product5"=>24.95);
 
