@@ -58,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sqlStmt->bindParam(':Address', $address);
         $sqlStmt->bindParam(':PhoneNumber', $phoneNumber);
         $sqlStmt->execute();
+        echo "Successfully registered";
     }
 }
 ?>
