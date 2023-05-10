@@ -6,10 +6,28 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-6">
-            Column 1
+            <p>username: jenniferwood2005@gmail.com</p>
+            <p>Password: password</p>
+            <p>username: admin@admin.com</p>
+            <p>Password: admin</p>
         </div>
         <div class="col-6">
-            Column 2
+            <?php if (!isset($_SESSION["EmailAddress"])) : ?>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control" required="required"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" required="required"/>
+                    </div>
+
+                    <div class="text-center">
+                        <button name="login" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            <?php endif; ?>
         </div>
     </div>
 </div>
