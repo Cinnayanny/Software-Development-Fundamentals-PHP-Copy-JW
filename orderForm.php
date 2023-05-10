@@ -36,10 +36,10 @@
                     <h2>Products</h2>
                     <!--Product List-->
                     <p>Please enter the quantities of each product:</p>
-                    <label for="orderProduct1" class="form-label"><?php echo $productNames["Catgirl Headphones"]; ?>/label>
+                    <label for="orderProduct1" class="form-label"><?php echo $productNames["Catgirl Headphones"]; ?></label>
                     <input type="number" class="form-control" id="orderProduct1" name="orderProduct1"
                            value="0">
-                    <label for="orderProduct2" class="form-label"><?php echo $productNames["AlrePlush"]; ?>/label>
+                    <label for="orderProduct2" class="form-label"><?php echo $productNames["AlrePlush"]; ?></label>
                     <input type="number" class="form-control" id="orderProduct2" name="orderProduct2"
                            value="0">
                     <label for="orderProduct3" class="form-label"><?php echo $productNames["Funny Jigsaw"]; ?></label>
