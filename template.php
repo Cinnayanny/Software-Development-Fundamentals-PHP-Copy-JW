@@ -11,10 +11,14 @@
         <img src="Images/Prototype.png" width="153.5" height="107">
         <a href="index.php">Home</a>
         <a href="contact.php">Contacts</a>
-        <a href="orderForm.php">Order</a>
-        <a href="invoice.php">Invoice</a>
-        <a href="invoiceHistory.php">Invoice History</a>
-        <a href="register.php">Register</a>
+        <?php
+        if (isset($_SESSION["FirstName"])) {
+            echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
+            echo '<li class="nav-item" ><a class="nav-link" href = "invoiceList.php"> Invoice list</a ></li >';
+        } else {
+            echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>';
+        }
+        ?>
         <!--<form><p><label for="search"></label>
                 <input type="text" id="search" name="search">
                 <button onclick="authentication(this.form)">Search</button></p>
