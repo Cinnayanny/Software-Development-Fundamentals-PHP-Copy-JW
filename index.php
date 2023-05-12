@@ -6,7 +6,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-6">
-            <p>username: jenniferwood2005@gmail.com</p>
+            <p>username: average@user</p>
             <p>Password: password</p>
             <p>username: admin@admin.com</p>
             <p>Password: admin</p>
