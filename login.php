@@ -1,4 +1,3 @@
-<?php include "template.php"?>
 <?php
 /**  @var $conn */
 
