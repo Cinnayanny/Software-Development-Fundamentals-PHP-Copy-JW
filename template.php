@@ -24,6 +24,11 @@
                 <button onclick="authentication(this.form)">Search</button></p>
         </form> -->
     </div>
+    <?php
+    if (isset($_SESSION["FirstName"])) {
+        echo '<div class="bg-light">Welcome, ' . $_SESSION["FirstName"] . '!<a class="nav-link" href="logout.php">Logout</a></div>';
+    }
+    ?>
 </head>
 
 
