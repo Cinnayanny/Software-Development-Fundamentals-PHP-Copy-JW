@@ -16,11 +16,15 @@
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
                     <div class="form-group">
                         <label>Username</label>
-                        <input type="text" name="username" class="form-control" required="required"/>
+                        <label>
+                            <input type="text" name="username" class="form-control" required="required"/>
+                        </label>
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" name="password" class="form-control" required="required"/>
+                        <label>
+                            <input type="password" name="password" class="form-control" required="required"/>
+                        </label>
                     </div>
 
                     <div class="text-center">
@@ -35,4 +39,3 @@
 <?php echo footer() ?>
 </body>
 <script src="js/bootstrap.bundle.min.js" ></script>
-</html>
