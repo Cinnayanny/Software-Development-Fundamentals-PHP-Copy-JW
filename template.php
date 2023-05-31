@@ -37,7 +37,6 @@
         }
 
         ?>
-        ?>
         <!--<form><p><label for="search"></label>
                 <input type="text" id="search" name="search">
                 <button onclick="authentication(this.form)">Search</button></p>
