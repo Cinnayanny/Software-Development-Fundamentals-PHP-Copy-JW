@@ -75,7 +75,6 @@
 
 <?php
 
-session_start();
 $conn = new SQLite3("db") or die("Unable to open database");
 
 $productNames = array("product1"=>"Catgirl Headphones", "product2"=>"ArlePlush", "product3"=>"Funny Jigsaw", "product4"=>"Pirated copy of Photoshop", "product5"=>"Good Opinions");
