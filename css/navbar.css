@@ -1,5 +1,5 @@
 .navbar {
-    overflow: hidden;
+    /*overflow: auto;*/
     background-color: aliceblue;
     width: 100%;
 }
