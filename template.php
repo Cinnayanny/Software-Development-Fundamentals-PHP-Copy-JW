@@ -22,11 +22,11 @@
             if ($_SESSION["AccessLevel"] == 1) {
                 ?>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
                         Product Management
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="productAdd.php">Add Products</a></li>
                         <li><a class="dropdown-item" href="productList.php">Product List</a></li>
                         <li><a class="dropdown-item" href="invoiceHistory.php">Invoice History</a></li>
