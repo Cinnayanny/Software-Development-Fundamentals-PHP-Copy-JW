@@ -73,6 +73,22 @@
     ?>
 </nav>
 
+<?php
+if (isset($_SESSION['flash_message'])) {
+    $message = $_SESSION['flash_message'];
+    unset($_SESSION['flash_message']);
+//    echo $message;
+    ?>
+    <div class="position-absolute bottom-0 end-0">
+        <?= $message ?>
+
+    </div>
+
+
+    <?php
+}
+?>
+
 
 <?php
 
