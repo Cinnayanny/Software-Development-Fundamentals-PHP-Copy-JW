@@ -23,7 +23,7 @@ if ($_SESSION['AccessLevel'] == 1) {
             <div class="row">
                 <div class="col-md-2">
                     <?php
-                    echo '<img src="images/productImages/' . $productData[1] . '" width="50" height="50">';
+                    echo '<img src="Images/productImages/' . $productData[1] . '" width="50" height="50">';
                     ?>
                 </div>
                 <div class="col-md-4">

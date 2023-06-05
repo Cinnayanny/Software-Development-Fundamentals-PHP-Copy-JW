@@ -67,7 +67,7 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
             ?>
             <div class="row">
                 <div class="col-2">
-                    <img src='images/productImages/<?php echo $product["image"]; ?>' width="50" height="40"/>
+                    <img src='Images/productImages/<?php echo $product["image"]; ?>' width="50" height="40"/>
                 </div>
                 <div class="col-2"><?php echo $product["productName"]; ?> <br>
                     <form method='post' action=''>

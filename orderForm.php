@@ -56,7 +56,7 @@ if (!empty($_SESSION["ShoppingCart"])) {
     $cart_count = count(array_keys($_SESSION["ShoppingCart"]));
     ?>
     <div class="cart_div">
-        <a href="cart.php"><img src="images/cart-icon.png"/> Cart<span>
+        <a href="cart.php"><img src="Images/cart-icon.png" width='20' height='20'/> Cart<span>
 <?php echo $cart_count; ?></span></a>
     </div>
     <?php
@@ -67,7 +67,7 @@ while ($row = $result->fetchArray()) {
     echo "<div class='product_wrapper'>
     <form method ='post' action =''>
     <input type='hidden' name='Code' value=" . $row['Code'] . " />
-    <div class='image'><img src='images/productImages/" . $row['Image'] . "' width='100' height='100'/></div>
+    <div class='image'><img src='Images/productImages/" . $row['Image'] . "' width='100' height='100'/></div>
     <div class='name'>" . $row['ProductName'] . "</div>
     <div class='price'>$" . $row['Price'] . "</div>
     <button type='submit' class='buy'>Add to Cart</button>

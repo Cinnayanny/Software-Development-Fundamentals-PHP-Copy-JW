@@ -31,7 +31,7 @@
                 <?php
                 if (isset($_SESSION["FirstName"])) {
                     echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
-                    echo '<li class="nav-item" ><a class="nav-link" href = "invoice.php"> Invoice list</a ></li >';
+//                    echo '<li class="nav-item" ><a class="nav-link" href = "invoice.php"> Invoice list</a ></li >';
                 } else {
                     echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>';
                 }
@@ -72,7 +72,7 @@
     }
     ?>
 </nav>
-
+<script src="js/bootstrap.bundle.min.js" ></script>
 <?php
 if (isset($_SESSION['flash_message'])) {
     $message = $_SESSION['flash_message'];
