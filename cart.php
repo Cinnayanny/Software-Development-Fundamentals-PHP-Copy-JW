@@ -15,7 +15,7 @@
 
 <?php
 // Debug Purposes
- //echo '<pre>'; print_r($_SESSION["ShoppingCart"]); echo '</pre>';
+ echo '<pre>'; print_r($_SESSION["ShoppingCart"]); echo '</pre>';
 
 
 if (isset($_SESSION["FirstName"])) {
@@ -24,6 +24,7 @@ $status = "";
 if (isset($_POST['action']) && $_POST['action'] == "remove") {
     if (!empty($_SESSION["ShoppingCart"])) {
         foreach ($_SESSION["ShoppingCart"] as $key => $value) {
+//            For some reason, this line breaks if it sees the $key is a number. This means the $code has to be letters. The bug is that if the code is numbers, the product fails to be removed.
             if ($_POST["code"] == $key) {
                 unset($_SESSION["ShoppingCart"][$key]);
                 $status = "<div class='box' style='color:red;'>Product is removed from your cart!</div>";
@@ -132,9 +133,10 @@ if (isset($_POST['action']) && $_POST['action'] == "change") {
                 $productID = $row['id'];
                 $quantity = $row['quantity'];
                 $orderDate = date("Y-m-d h:i:sa");
+                $_SESSION["flash_message"] = "<div class='bg-success'>Order Successful</div>";
 
                 // Write to the Db.
-                $conn->exec("INSERT INTO Orders (OrderNumber,CustomerID, ProductID, OrderDate, quantity) VALUES('$orderNumber','$customerID','$productID','$orderDate', '$quantity')");
+                $conn->exec("INSERT INTO Orders (OrderNumber,CustomerID, ProductID, OrderDate, Quantity) VALUES('$orderNumber','$customerID','$productID','$orderDate', '$quantity')");
 
             }
         $_SESSION["ShoppingCart"] = [];

@@ -40,7 +40,7 @@ if ($_SESSION['AccessLevel'] == 1) {
                     <!--Product List-->
                     <p>Price<input type="number" step="0.01" name="prodPrice" class="form-control" required="required">
                     </p>
-                    <p>Product Code<input type="text" name="prodCode" class="form-control" required="required"></p>
+                    <p>Product Code (No Numbers)<input type="text" name="prodCode" class="form-control" required="required"></p>
                     <p>Product Picture <input type="file" name="prodImage" class="form-control" required="required"></p>
                 </div>
             </div>
