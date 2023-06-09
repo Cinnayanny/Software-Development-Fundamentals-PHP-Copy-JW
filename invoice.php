@@ -87,6 +87,7 @@ if (!isset($_SESSION["CustomerID"])) {
 
                 echo "</div>";
             }
+            }
+            }
             ?>
-    }
-}
+<!--            There would be brackets here, but they;re unnecessary. I don't know why.-->

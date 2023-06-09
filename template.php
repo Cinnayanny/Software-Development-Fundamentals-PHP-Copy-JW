@@ -31,7 +31,7 @@
                 <?php
                 if (isset($_SESSION["FirstName"])) {
                     echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
-//                    echo '<li class="nav-item" ><a class="nav-link" href = "invoice.php"> Invoice list</a ></li >';
+                    echo '<li class="nav-item" ><a class="nav-link" href = "invoice.php"> Invoice list</a ></li >';
                 } else {
                     echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>';
                 }
@@ -49,7 +49,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="productAdd.php">Add Products</a></li>
                                 <li><a class="dropdown-item" href="productList.php">Product List</a></li>
-                                <li><a class="dropdown-item" href="invoiceHistory.php">Invoice History</a></li>
+                                <li><a class="dropdown-item" href="invoice.php">Invoice History</a></li>
                             </ul>
                         </li>
                         <?php
