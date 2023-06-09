@@ -91,3 +91,21 @@ if (!isset($_SESSION["CustomerID"])) {
             }
             ?>
 <!--            There would be brackets here, but they;re unnecessary. I don't know why.-->
+<!--            if ($_SESSION["AccessLevel" == 1]) {-->
+<!--            if (!empty($_GET["status"])) {-->
+<!--            if ($_GET["status"] == "CLOSED") {-->
+<!--            $conn->exec("UPDATE Orders SET status='CLOSED' WHERE OrderNumber='$orderNumber'");-->
+<!--            $orderMessage = "Order #:" . $orderNumber . " has been closed";-->
+<!--            } else {-->
+<!--            $conn->exec("UPDATE Orders SET status='OPEN' WHERE OrderNumber='$orderNumber'");-->
+<!--            $orderMessage = "Order #:" . $orderNumber . " has been re-opened";-->
+<!--            }-->
+<!--            }-->
+<!--            if ($status == "OPEN") {-->
+<!--            echo "STATUS: OPEN";-->
+<!--            echo "<p><a href='invoice.php?order=" . $orderNumber . "&status=CLOSED'>Click here to close</a></p>";-->
+<!--            } else {-->
+<!--            echo "STATUS: CLOSED";-->
+<!--            echo "<p><a href='invoice.php?order=" . $orderNumber . "&status=OPEN'>Click here to open</a></p>";-->
+<!--            }-->
+<!--            }-->
