@@ -24,6 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
+<!--                    The navbar in action! There's a few tiers to it. Index and Contact are pages that appear regardless of user status.-->
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
@@ -31,12 +32,15 @@
                 </li>
                 <?php
                 if (isset($_SESSION["FirstName"])) {
+//                    The line above this checks if the user is logged in. If they are, they'll be able to access the pages below it.
                     echo '<li class="nav-item" ><a class="nav-link" href = "orderForm.php"> Order Form </a ></li >';
-                    echo '<li class="nav-item" ><a class="nav-link" href = "invoice.php"> Invoice list</a ></li >';
+                    echo '<li class="nav-item" ><a class="nav-link" href = "invoice.php"> Invoice List</a ></li >';
                 } else {
+//                    Otherwise, they'll be given the option to create an account.
                     echo '<li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>';
                 }
                 if (isset($_SESSION["AccessLevel"])) {
+//                    This checks if the user is an admin via access level.
                     if ($_SESSION["AccessLevel"] == 1) {
                         ?>
                         <li class="nav-item dropdown">
@@ -69,6 +73,7 @@
 
     <?php
     if (isset($_SESSION["FirstName"])) {
+//        This lets the user know who they're signed in as and gives them the option to log out.
         echo '<div class="bg-light">Welcome, ' . $_SESSION["FirstName"] . '!<a class="nav-link" href="logout.php">Logout</a></div>';
     }
     ?>
