@@ -1,3 +1,4 @@
+<!--This page exists to be a baseline for every other page. It includes things like the navbar, general page layout, and the product SQL. It's placed here as having it in every page would mean that if a bug was found or the navbar needed an update, I'd have to go through every page and change it.-->
 <?php session_start(); ?>
 <!doctype html>
 <html lang="en">
